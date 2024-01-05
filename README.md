@@ -16,11 +16,12 @@ Here are some of the key third-party libraries powering this application.
 ## Frameworks & Libraries
 - **ReactJS with Vite** - ReactJS is a popular JavaScript library for building user interfaces, particularly single-page applications. Vite is a modern front-end build tool that provides a faster and leaner development experience for React projects. It offers features like hot module replacement and efficient bundling.
 - **Tailwind CSS** - A utility-first CSS framework for rapidly building custom user interfaces without writing custom CSS.
+- **Redis** - Redis is an in-memory data structure store, widely used as a database, cache, and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, and geospatial indexes with radius queries. Redis has built-in replication, Lua scripting, LRU eviction, transactions, and different levels of on-disk persistence, and provides high availability via Redis Sentinel and automatic partitioning with Redis Cluster. It's known for its high performance, flexibility, and ease of use, making it a popular choice for scaling web applications.
+- **MongoDB** - MongoDB is a NoSQL database known for its flexibility and scalability. It uses a document-oriented data model and supports various data types. MongoDB is widely used in modern web applications for its performance and ability to handle large volumes of data.
 - **Flask** - A lightweight web framework for Python, ideal for creating small to medium web applications.
 - **python-dotenv** - Loads environment variables from a `.env` file, making it easier to manage configuration settings.
 - **requests** - Python's go-to HTTP client library, used for making various HTTP requests.
 - **Flask-Cors** - A Flask extension to handle Cross-Origin Resource Sharing (CORS) and allow web browsers to make requests across domains.
-- **MongoDB** - MongoDB is a NoSQL database known for its flexibility and scalability. It uses a document-oriented data model and supports various data types. MongoDB is widely used in modern web applications for its performance and ability to handle large volumes of data.
 - **pylint** - A static code analysis tool for Python, used to identify coding errors and enforce a coding standard.
 - **Gunicorn**: A Python WSGI HTTP Server for UNIX, Gunicorn acts as an interface between Python web applications and the web server, known for its efficiency and ability to handle multiple requests simultaneously.
 - **Nginx**: A high-performance web server, Nginx excels in serving static content, reverse proxying, and load balancing, commonly used in front of Python applications to manage HTTP requests and static files.
