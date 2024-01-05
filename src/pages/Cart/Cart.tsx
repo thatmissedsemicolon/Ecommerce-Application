@@ -55,7 +55,7 @@ const Cart: React.FC<CartProps> = ({ user }) => {
       items: cart,
       status: 'Confirmed',
       total: Number(getTotal()),
-      date: String(userLocalTime)
+      date: userLocalTime.toISOString()
     }
 
     const { data } = await addOrder(order)
