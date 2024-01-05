@@ -9,8 +9,9 @@ import {
 } from 'react-router-dom'
 
 import { 
+  URI,
   updateUserOrder, 
-  cancelUserOrder 
+  cancelUserOrder
 } from '../../api'
 
 import { 
@@ -24,7 +25,7 @@ import { formatPrice } from '../../utils'
 import io from 'socket.io-client'
 import Loader from '../../utils/Loader'
 
-const socket = io('http://localhost:8000')
+const socket = io(URI)
 
 const isProductType = (item: ProductProps | CartItem): item is ProductProps => (item as ProductProps).thumbnail !== undefined
 

@@ -10,7 +10,7 @@ import {
 } from "../utils/types"
 
 // Server URI 
-const URI = "http://localhost:8000"
+export const URI = import.meta.env.MODE === 'production' ? "https://pythonserver.tech" : "http://localhost:8000"
 
 const getLocalAccessToken = (): string | null => {
   return localStorage.getItem('access_token') !== 'undefined' ? localStorage.getItem('access_token') : null

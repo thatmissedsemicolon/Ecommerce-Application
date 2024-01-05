@@ -9,10 +9,12 @@ import {
 } from '../../utils/types'
 
 import io from 'socket.io-client'
+
+import { URI } from '../../api'
 import { Pagination } from '../../components'
 import Loader from '../../utils/Loader'
 
-const socket = io('http://localhost:8000')
+const socket = io(URI)
 
 const ManageOrders: React.FC = () => {
   const [orders, setOrders] = useState<OrderProps[] | null>([])
