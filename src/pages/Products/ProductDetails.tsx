@@ -197,7 +197,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ user }) => {
             </React.Fragment>
   
             <div className="flex space-x-4 mt-4">
-              <button disabled={product && product?.stock <= 0} onClick={() => user ? (product && addToCart(product)) : (window.location.href = `/signin?redirect=${category}/${productId}`)} className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-500">
+              <button disabled={product && product?.stock <= 0} onClick={() => user ? (product && addToCart(product)) : (window.location.href = `/signin?redirect=/products/${category}/${productId}`)} className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-500">
                 {product && product?.stock > 0 ? 'Add to Cart' : 'Out of Stock'}
               </button>
               {user && (
