@@ -31,7 +31,7 @@ const WishList: React.FC<WishListProps> = ({ user }) => {
       setLoading(true)
       try {
         const { data } = await getWishList()
-        if (data.response) {
+        if (data) {
           const productDetails: ProductProps[] = await Promise.all(
             data.wishlist.products.map((id: string) => 
               getProductById(id, 1).then(res => res.data as ProductProps)
